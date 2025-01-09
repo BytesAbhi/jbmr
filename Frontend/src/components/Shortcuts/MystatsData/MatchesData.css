@@ -1,0 +1,117 @@
+.matchData_container {
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.miniContainer_matchData {
+    width: 90%;
+    padding: 20px;
+    background-color: rgb(243, 244, 246);
+}
+
+.heading_matchData {
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading_matchData button {
+    cursor: pointer;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(59, 130, 246);
+}
+
+.threeCards {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.threeCards .MatchData_Cards {
+    width: 32%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    /* border: 2px solid black; */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+    transform: scale(1); /* Default scale */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.MatchData_Cards .MatchData_paragraph {
+    color: rgb(107, 114, 128);
+    margin: 0.2rem 0rem 0.2rem 0rem;
+    font-size: 0.9rem;
+}
+
+.MatchData_Cards .MatchData_team {
+    margin: 0.2rem 0rem 0.2rem 0rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.MatchData_Cards .MatchData_progress {
+    margin: 0.2rem 0rem 0.2rem 0rem;
+    font-size: 0.9rem;
+}
+
+.MatchData_Cards .MatchData_tossing {
+    color: rgb(107, 114, 128);
+    margin: 0.2rem 0rem 0.2rem 0rem;
+    font-size: 0.9rem;
+}
+
+/* Hover effect - Zoom in on hover */
+.threeCards .MatchData_Cards:hover {
+    transform: scale(1.1); /* Zoom in to 110% */
+}
+
+@media screen and (max-width:768px){
+    .threeCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .threeCards .MatchData_Cards {
+        width: 95%;
+    }
+  }
+@media screen and (max-width:400px){
+    
+    .threeCards .MatchData_Cards {
+        width: 95%;
+    }
+    .threeCards .MatchData_Cards h3{
+        font-size: 0.9rem;
+    }
+    .MatchData_Cards .MatchData_paragraph {
+        font-size: 0.8rem;
+    }
+    
+    .MatchData_Cards .MatchData_team {
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    
+    .MatchData_Cards .MatchData_progress {
+        font-size: 0.8rem;
+    }
+    
+    .MatchData_Cards .MatchData_tossing {
+        font-size: 0.8rem;
+    }
+  }

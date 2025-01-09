@@ -1,0 +1,77 @@
+.footer_container{
+    width: 100%;
+    margin-top: 1.5rem;
+    color: white;
+    background-color: rgb(56,31,115);
+}
+.handel_footerContent{
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+}
+.footer_lists{
+    list-style: none;
+    /* border: 2px solid red; */
+}
+.teams_heading{
+    margin-bottom: 1rem;
+}
+.footer_lists li{
+    margin-bottom: 0.5rem;
+}
+.latestUpdate_list{
+    list-style: none;
+}
+.latestUpdate_heading{
+    margin-bottom: 1rem;
+}
+.latestUpdate_list li{
+    margin-bottom: 0.5rem;
+}
+.guidelines_list{
+    list-style: none;
+}
+.guidelines_heading{
+    margin-bottom: 1rem;
+}
+.guidelines_list li{
+    margin-bottom: 0.5rem;
+}
+.contact_list{
+    list-style: none;
+}
+.contact_heading{
+    margin-bottom: 1rem;
+}
+.contact_list li{
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px){
+    .handel_footerContent{
+        width: 100%;
+        padding: 20px 30px;
+        display: block;
+        /* border: 2px solid red; */
+    }
+    .latestUpdate_heading{
+        margin-top: 1rem;
+    }
+    .guidelines_heading{
+        margin-top: 1rem;
+    }
+    .contact_heading{
+        margin-top: 1rem;
+    }
+}
+
+.footer_copyright{
+    width: 100%;
+    padding: 15px 0px;
+    text-align: center;
+    background-color: rgb(50,23,106);
+    /* border: 2px solid red; */
+}
+

@@ -1,0 +1,147 @@
+.liveStream_container {
+    width: 100%;
+    padding: 30px 0px;
+    margin-top: 3rem;
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid red; */
+}
+.liveStrem_secondContainer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.write_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(57, 71, 107);
+    text-align: center;
+    line-height: 28px;
+    font-weight: 700;
+    height: 250px;
+    
+}
+
+.liveStream_txt {
+    font-size: 0.9rem;
+    padding-left: 5rem;
+    white-space: nowrap;
+}
+
+.liveStream_tours {
+    padding-left: 1.7rem;
+    font-size: 2.7rem;
+}
+
+.seeFullScheduleBtn {
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 7px;
+    border: none;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: rgb(255, 80, 0);
+    
+}
+
+.live_feed {
+    width: 100%;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;  /* To wrap the images in a responsive manner */
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+}
+
+.live_feed_item {
+    width: 170px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageBox {
+    width: 100%;
+    height: 280px;
+    border-radius: 5px;
+    overflow: hidden; 
+    position: relative;
+}
+
+.imageBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.imageBox img:hover {
+    transform: scale(1.1);
+}
+
+.eventDetails {
+    width: 100%;
+    text-align:start;
+    margin-top: 10px;
+    /* border: 2px solid red; */
+}
+
+.eventDetails h5 {
+    font-size: 0.8rem;
+    /* font-weight: bold; */
+    color: rgb(0, 0, 0);
+    /* border: 2px solid red; */
+}
+
+.liveStream_date {
+    font-size: 0.8rem;
+    font-family: Roboto;
+    font-weight: 400;
+    color: rgb(116, 116, 116);
+}
+
+@media screen and (max-width:1099px){
+    .live_feed_item {
+        width: 150px;
+    }
+    
+    .imageBox {
+        width: 100%;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 993px){
+    .live_feed_item {
+        width: 130px;
+    }
+    
+    .imageBox {
+        width: 100%;
+        height: 230px;
+    }
+}
+@media screen and (max-width: 885px){
+    .live_feed_item {
+        width: 110px;
+    }
+    
+    .imageBox {
+        width: 100%;
+        height: 210px;
+    }
+}
+/* @media screen and (max-width: 885px){
+    .liveStrem_secondContainer{
+        display: block;
+        border: 2px solid red;
+    }
+} */
+ @media screen and (max-width:1px){
+    
+ }

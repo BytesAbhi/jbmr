@@ -1,0 +1,157 @@
+/* Navbar container */
+.navbar_container {
+  width: 100%;
+  color: white;
+  height: 85vh;
+  background-image: url('https://images.fancode.com/skillup-uploads/fc-web/home-page-new-arc/hero-image/v1/hero-image-dweb-v4.png?hash=eyJrZXkiOiJza2lsbHVwLXVwbG9hZHMvZmMtd2ViL2hvbWUtcGFnZS1uZXctYXJjL2hlcm8taW1hZ2UvdjEvaGVyby1pbWFnZS1kd2ViLXY0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJjb3ZlciIsIndpZHRoIjoyODgwLCJoZWlnaHQiOjg4MH0sIndlYnAiOnsicXVhbGl0eSI6NjAsImxvc3NsZXNzIjpmYWxzZX19LCJvdXRwdXRGb3JtYXQiOiJ3ZWJwIn0=');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Roboto;
+  background-position: center;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  padding: 0.5rem 3rem;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* border: 2px solid red; */
+}
+
+/* Navbar items list */
+.nav_lists {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav_lists li {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown Styling */
+.dropdown:hover .dropdown_list {
+  display: block;
+}
+
+.dropdown_list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: black;
+  list-style: none;
+  padding: 0.1rem 0rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  border-radius: 5px;
+  width: 150px;
+}
+
+/* Add the following style to position Featured Tours dropdown on the right */
+.dropdown_list .featuredTours:hover .dropdown_list {
+  left: 100%; /* Move it to the right */
+  top: 0; /* Align it to the top of the parent dropdown */
+}
+
+/* Center text inside dropdown list items */
+.dropdown_list li {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.6rem 0rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown_list li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Arrow Icon Styling */
+.dropdown i {
+  margin-left: 8px;
+  font-size: 1.2rem;
+}
+
+/* Styling for scrolled state */
+.navbar_container.scrolled .navbar {
+  background-color: white;
+  color: black !important;
+}
+
+.navbar_container.scrolled .nav_lists li {
+  color: black !important;
+}
+
+.navbar_container.scrolled h2 {
+  color: black !important;
+}
+
+.navbar_container.scrolled .profile {
+  border: 1px solid black;
+}
+
+.img_heading {
+  margin-top: 4rem;
+  padding: 0rem 2.8rem;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  background: linear-gradient(rgb(173, 173, 173) 0%, rgb(245, 245, 245) 100%) text;
+  -webkit-text-fill-color: transparent;
+}
+
+.setBoth_downloadAndProfile{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  /* border: 2px solid purple; */
+}
+
+.downloadApp {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* border: 2px solid red; */
+}
+.download_img{
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  background-color: #ffffff1a;
+  /* border: 2px solid red; */
+}
+.menuIcon{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav_lists {
+    display: none;
+  }
+  .downloadApp {
+    display: none;
+  }
+  .menuIcon{
+    display: block;
+  }
+}

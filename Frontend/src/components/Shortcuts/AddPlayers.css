@@ -1,0 +1,131 @@
+.AddPlayers_form_handle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235,244,251);
+    /* border: 2px solid red; */
+}
+.AddPlayers_form-container{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+.AddPlayers_form{
+        width: 100%; /* Set width of form to 60% */
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        /* border: 2px solid red; */
+}
+.AddPlayers_formGroup label{
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+}
+.AddPlayers_formGroup input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .AddPlayers_btns{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1.5rem; */
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+  
+  .addPlayers_btn{
+    width: 45%;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgb(0,123,255);
+  }
+  .addPlayers_btn:hover{
+    background-color: rgb(8, 111, 221);
+  }
+  .addPlayers_profileBtn{
+    width: 45%;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgb(76,175,80);
+  }
+  .addPlayers_profileBtn:hover{
+    background-color: rgb(69, 147, 72);
+  }
+  .addPlayers_list{
+    width: 100%;
+    list-style: none;
+    /* border: 2px solid red; */
+  }
+  .addPlayers_list li{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    background-color: rgb(249,250,251);
+    border: 1px solid rgb(229,231,235);
+  }
+  .addPlayers_list li p{
+    font-size: 0.9rem;
+  }
+  .AddPlayers_invite{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+  .AddPlayers_invite .AddPlayers_sendInvite{
+    width: 50%;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(34,197,94);
+  }
+  .AddPlayers_invite .AddPlayers_sendInvite:hover{
+    background-color: rgb(69, 147, 72);
+  }
+
+  @media screen and (max-width:768px){
+    .AddPlayers_form-container{
+        width: 50%;
+    }
+  }
+  @media screen and (max-width:623px){
+    .AddPlayers_form-container{
+        width: 60%;
+    }
+  }
+  @media screen and (max-width:520px){
+    .AddPlayers_form-container{
+        width: 80%;
+    }
+  }
+  @media screen and (max-width:393px){
+    .AddPlayers_form-container{
+        width: 90%;
+    }
+  }
+  @media screen and (max-width:1px){
+    
+  }

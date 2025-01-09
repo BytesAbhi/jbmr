@@ -1,0 +1,21 @@
+.CreateTeam_form-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+}
+.file-upload {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+    border: 2px dashed #ccc; /* Adds a dashed border to indicate the drop area */
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 0.3s;
+  }
+   

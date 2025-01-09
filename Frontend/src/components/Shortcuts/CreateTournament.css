@@ -1,0 +1,143 @@
+.createTournament_container {
+    width: 100%;
+    background-color: #f8f9fa;
+  }
+  
+  .createTournament_navbar {
+    padding: 20px;
+    color: white;
+    background-color: rgb(17, 24, 39);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .createTournament_navbar .leftArrow {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .form_handle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235,244,251);
+    /* border: 2px solid red; */
+  }
+  
+  .form-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    /* border: 2px solid red; */
+  }
+  
+  form {
+    width: 100%; /* Set width of form to 60% */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* border: 2px solid red; */
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between; /* Adjusted from 'space-eve' to 'space-between' */
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    width: 48%; /* Adjusted width of each form group to fit within the container */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-group input[type="date"] {
+    font-size: 14px;
+  }
+  .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
+  .createTournamentBtn {
+    background-color: rgb(0, 145, 255); /* Set the default button color */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .createTournamentBtn:hover {
+    background-color: rgb(0, 153, 255); /* Darker shade for the hover effect */
+  }
+  
+  
+  /* Styling for the file upload section */
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px dashed #ccc; /* Adds a dashed border to indicate the drop area */
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 0.3s;
+  }
+  
+  .file-upload p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+  }
+  
+  .file-upload:hover {
+    border-color: rgb(0, 153, 255); /* Change border color when hovered */
+  }
+  
+  .file-upload input[type="file"] {
+    display: none; /* Hides the actual file input */
+  }
+  
+  @media screen and (max-width:550px){
+    .form-container {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width:432px){
+    .form-container {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width:375px){
+    .form-container {
+      width: 100%;
+    }
+  }

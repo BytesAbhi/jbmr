@@ -1,0 +1,140 @@
+/* Container for the profile and stats section */
+.attachDetails{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(226, 229, 236);
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* Profile section: image and name */
+.profilesWithName{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.profilesWithName img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/* Rank text styling */
+.rankSize{
+    color: rgb(125, 114, 128);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Sections: ChRank and Insights */
+.twoSections{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: white;
+    /* border: 2px solid red; */
+}
+
+/* ChRank section styling */
+.twoSections .ChRank{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(42, 106, 237);
+}
+.twoSections .ChRank:hover{
+    background-color: rgb(30, 78, 175);
+}
+
+/* Insights section styling */
+.twoSections .insights{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(107, 114, 128);
+}
+.twoSections .insights:hover{
+    background-color: rgb(87, 93, 105);
+}
+
+/* Select match section: list of tabs */
+.MyStats_selectMatch{
+    width: 100%;
+    padding: 15px 0px;
+    background-color: rgb(254, 242, 242);
+}
+
+/* Navbar for tabs */
+.nav_selectMatch{
+    width: 100%;
+    padding: 12px 0px;
+    color: white;
+    background-color: rgb(30, 64, 175);
+}
+
+/* List style for the tabs */
+.nav_selectMatch .selectedMatchList{
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Style for each list item (tab) */
+.nav_selectMatch .selectedMatchList li{
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect for all list items */
+.nav_selectMatch .selectedMatchList li:hover{
+    color: rgb(30, 58, 138); /* Text color on hover */
+    background-color: rgb(250, 204, 21); /* Background color on hover */
+}
+
+/* Active tab styling */
+.nav_selectMatch .selectedMatchList li.active{
+   color: rgb(30, 58, 138); /* Text color on hover */
+    background-color: rgb(250, 204, 21); /* Background color on hover */
+}
+
+@media screen and (max-width:370px){
+    .nav_selectMatch .selectedMatchList{
+        font-size: 0.8rem;
+    }
+    .profilesWithName h3{
+        font-size: 0.7rem;
+    }
+    .rankSize{
+        font-size: 0.6rem;
+    }
+    /* Sections: ChRank and Insights */
+.twoSections{
+    gap: 0.5rem;
+}
+
+/* ChRank section styling */
+.twoSections .ChRank{
+    padding: 6px;
+    font-size: 0.8rem;
+}
+.twoSections .ChRank:hover{
+    background-color: rgb(30, 78, 175);
+}
+
+/* Insights section styling */
+.twoSections .insights{
+    padding: 6px;
+    font-size: 0.8rem;
+}
+.twoSections .insights:hover{
+    background-color: rgb(87, 93, 105);
+}
+  }

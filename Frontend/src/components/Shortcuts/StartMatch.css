@@ -1,0 +1,95 @@
+.startMatch_Container{
+    width: 100%;
+    /* height: 80vh; */
+    background-color: rgb(241,245,249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.startMatch_MiniContainer{
+    width: 70%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 3rem 0rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* border: 2px solid black; */
+}
+.startMatch_twoBoxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 1rem;
+    margin-top: 1rem;
+    /* border: 2px solid violet; */
+}
+.setSizeColor{
+    color: rgb(59,130,246);
+    font-size: 2rem;
+}
+.startMatch_twoBoxes .tournaments{
+    font-size:1.2rem;
+    font-weight: 500;
+    color: rgb(30,64,193);
+}
+.startMatch_twoBoxes .set_para_match{
+    text-align: center;
+}
+.startMatch_twoBoxes .firstBox{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: rgb(219,234,254);
+    border-radius: 5px;
+    border: 1px solid rgb(96,165,250);
+}
+.startMatch_twoBoxes .secondBox{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: rgb(219,234,254);
+    border-radius: 5px;
+    border: 1px solid rgb(96,165,250);
+}
+.startMatch_twoBoxes .firstBox:hover{
+    background-color: rgb(198, 215, 236);
+}
+.startMatch_twoBoxes .secondBox:hover{
+    background-color: rgb(198, 215, 236);
+}
+@media screen and (max-width: 768px){
+    .startMatch_twoBoxes{
+        flex-direction: column;
+    }
+    .startMatch_twoBoxes .firstBox{
+        width: 100%;
+    }
+    .startMatch_twoBoxes .secondBox{
+        width: 100%;
+    }
+    .startMatch_MiniContainer{
+        width: 90%;
+    }
+}
+@media screen and (max-width:886px){
+    .startMatch_MiniContainer{
+        width: 90%;
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width:475px){
+    .set_para_match{
+        font-size: 0.6rem;
+    }
+    .startMatch_twoBoxes .tournaments{
+        font-size:1rem;
+    }
+}

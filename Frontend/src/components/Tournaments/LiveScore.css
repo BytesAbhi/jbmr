@@ -1,0 +1,33 @@
+
+  .LiveScore_card {
+    width: 280px; /* Fixed width for each card */
+    height: 100px; /* Fixed height for each card */
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+    /* text-align: center; */
+    border: 2px solid rgb(242,243,245);
+  }
+ 
+  .LiveScore_Country-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+  .LiveScore_SetCountryImg{
+    width: 20px; /* You can adjust this size */
+    height: 20px;
+    margin-right: 8px;
+  }
+  .LiveScore_country_name{
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+  .LiveScore_country_score{
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  @media screen and (max-width:1px){
+    
+  }
